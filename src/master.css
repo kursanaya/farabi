@@ -64,7 +64,6 @@ body, html {
 }
 
 main {
-    padding-top: 20px;
     padding-bottom: 70px;
     background-image: url('../images/bgnew2.jpeg'); /* Указываем путь к изображению */
     background-size: cover; /* Растягиваем на весь блок */
@@ -415,7 +414,8 @@ main {
     background: #f8f9fa;
     color: #1a263c;
     text-align: center;
-    padding: 40px 0;
+    padding: 30px 0;
+    margin: 30px 10px;
 }
 
 .container {
