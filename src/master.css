@@ -10,8 +10,11 @@ body, html {
 /* Шапка */
 .header {
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Растягивает header на всю ширину */
+    z-index: 1000; /* Поднимает его выше других элементов */
     display: flex;
-    gap: 20px;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
@@ -83,6 +86,7 @@ main {
     display: none;
     font-size: 30px;
     color: white;
+    margin-right: 30px;
 }
 
 @media (max-width: 768px) {
