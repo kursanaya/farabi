@@ -64,8 +64,10 @@ body, html {
 }
 
 main {
+    padding-bottom: 70px;
     background-image: url('../images/bgnew2.jpeg'); /* Указываем путь к изображению */
     background-size: cover; /* Растягиваем на весь блок */
+    background-position: center; /* Центрируем */
     background-attachment: fixed; /* Фиксируем фон (по желанию) */    
     color: white; /* Чтобы текст был читаемым */
     display: flex;
