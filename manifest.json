@@ -1,0 +1,20 @@
+{
+    "name": "Farabi Forum",
+    "short_name": "Farabi Forum",
+    "start_url": ".",
+    "background_color": "#ffffff",
+    "theme_color": "#1a263c",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "images/logonew1.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
