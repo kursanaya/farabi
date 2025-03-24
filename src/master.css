@@ -9,6 +9,7 @@ body, html {
 
 /* Шапка */
 .header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,6 +65,7 @@ body, html {
 }
 
 main {
+    padding-top: 80px;
     padding-bottom: 70px;
     background-image: url('../images/bgnew2.jpeg'); /* Указываем путь к изображению */
     background-size: cover; /* Растягиваем на весь блок */
