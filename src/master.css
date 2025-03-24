@@ -11,6 +11,7 @@ body, html {
 .header {
     position: fixed;
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
@@ -24,14 +25,14 @@ body, html {
 }
 
 .logo {
-    height: 50px;
+    height: 60px;
 }
 
 .logo-text {
     font-family: "Adobe Hebrew";
     color: #d3985c;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 900;
     line-height: 120%;
     letter-spacing: 0.095em;
