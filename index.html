@@ -9,54 +9,69 @@
         <link rel="stylesheet" href="src/master.css">
         <link rel="manifest" href="manifest.json">
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="apple-touch-icon" href="images/logonew1.png">
+        <link rel="apple-touch-icon" href="../images/logo.png">
     </head>
     <body>
         <header class="header">
             <div class="logo-container">
-                <img src="images/logonew1.png" alt="Farabi University Logo" class="logo">
-                <span class="logo-text">IV МЕЖДУНАРОДНЫЙ ФАРАБИ ФОРУМ<br>1155-ЛЕТИЕ АЛЬ-ФАРАБИ</span>
+                <a href="https://al-farabi.kaznu.kz/?lang=kz"><img src="images/logo.png" alt="Farabi University Logo" class="logo"></a>
+                <span class="logo-text">IV ХАЛЫҚАРАЛЫҚ ФАРАБИ ФОРУМЫ<br>ӘЛ-ФАРАБИДІҢ 1155 ЖЫЛДЫҒЫ</span>
             </div>
-            <nav class="navbar">
-                <a href="/pages/programme.html">Программа</a>
-                <a href="/pages/committee.html">Комитет</a>
-                <a href="/pages/sections.html">Секции</a>
-                <a href="/pages/topics.html">Темы</a>
-                <a href="/pages/speakers.html">Спикеры</a>
-                <a href="/pages/partners.html">Партнеры</a>
-            </nav>
-            <div class="menu-icon">☰</div>
+            <a href="https://farabi.university/?lang=kz"><img src="images/logonew1.png" alt="Университет" class="logo right-logo"></a>
         </header>
         
         <main>
             <div class="grid-menu">
                 <div class="menu-item">
-                    <a href="/pages/programme.html"><i class="fa-solid fa-calendar"></i><span>Программа</span></a>
+                    <a href="/kz_pages/forum.html"><i class="fa-solid fa-calendar"></i><span>Фараби форум</span></a>
                 </div>
                 <div class="menu-item">
-                    <a href="/pages/committee.html"><i class="fa-solid fa-users"></i><span>Комитет</span></a>
+                    <a href="/kz_pages/programme.html"><i class="fa-solid fa-calendar-days"></i><span>Бағдарлама</span></a>
                 </div>
                 <div class="menu-item">
-                    <a href="/pages/sections.html"><i class="fa-solid fa-newspaper"></i><span>Секции</span></a>
+                    <a href="/kz_pages/sections.html"><i class="fa-solid fa-newspaper"></i><span>Секциялар</span></a>
                 </div>
                 <div class="menu-item">
-                    <a href="/pages/topics.html"><i class="fa-solid fa-file-alt"></i><span>Темы</span></a>
+                    <a href="/kz_pages/discussion.html"><i class="fa-solid fa-comments"></i><span>Пікірталас алаңдары</span></a>
                 </div>
                 <div class="menu-item">
-                    <a href="/pages/speakers.html"><i class="fa-solid fa-microphone"></i><span>Спикеры</span></a>
+                    <a href="/kz_pages/committee.html"><i class="fa-solid fa-users"></i><span>Комитет</span></a>
                 </div>
                 <div class="menu-item">
-                    <a href="/pages/partners.html"><i class="fa-solid fa-handshake"></i><span>Партнеры</span></a>
+                    <a href="/kz_pages/partners.html"><i class="fa-solid fa-handshake"></i><span>Серіктестер</span></a>
                 </div>
-                
+                <div class="menu-item">
+                    <a href="/kz_pages/topics.html"><i class="fa-solid fa-file-alt"></i><span>Тақырыптар</span></a>
+                </div>
+                <div class="menu-item">
+                    <a href="/kz_pages/speakers.html"><i class="fa-solid fa-microphone"></i><span>Спикерлер</span></a>
+                </div>
             </div>
         </main>
         <nav class="bottom-nav">
-            <a href="/pages/farabi.html"><i class="fa-solid fa-landmark"></i> Фараби</a>
-            <a href="/"><i class="fa-solid fa-home"></i> Главная</a>
-            <a href="/pages/map.html"><i class="fa-solid fa-map"></i> Карта</a>
-            <a href="/pages/contacts.html"><i class="fa-solid fa-address-book"></i> Контакты</a>
+            <a href="/kz_pages/farabi.html"><i class="fa-solid fa-landmark"></i> әл-Фараби</a>
+            <a href="/kz_pages/map.html"><i class="fa-solid fa-map"></i> Карта</a>
+            <a href="/"><i class="fa-solid fa-home"></i> Басты бет</a>
+            <a href="/kz_pages/contacts.html"><i class="fa-solid fa-address-book"></i> Байланыс</a>
+            <a href="#" class="menu-button" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i> Мәзір
+            </a>
         </nav>
+        <div id="dropdown-menu" class="dropdown-menu">
+            <a href="/kz_pages/forum.html">Фараби форум</a>
+            <a href="/kz_pages/programme.html">Бағдарлама</a>
+            <a href="/kz_pages/sections.html">Секциялар</a>
+            <a href="/kz_pages/discussion.html">Пікірталас алаңдары</a>
+            <a href="/kz_pages/committee.html">Комитет</a>
+            <a href="/kz_pages/partners.html">Серіктестер</a>
+            <a href="/kz_pages/topics.html">Тақырыптар</a>
+            <a href="/kz_pages/speakers.html">Спикерлер</a>
+            <div class="language-menu">
+                <a href="/">Қаз</a>
+                <a href="/ru_index.html">Рус</a>
+                <a href="/en_index.html">Eng</a>
+            </div>
+        </div>
         <script src="src/index.js"></script>
     </body>
 </html>
