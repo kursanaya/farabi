@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#1a263c">
+        <title>Farabi Forum</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="../src/master.css">
+        <link rel="manifest" href="manifest.json">
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="../images/logo.png">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo-container">
+                <a href="https://al-farabi.kaznu.kz/?lang=kz"><img src="../images/logo.png" alt="Farabi University Logo" class="logo"></a>
+                <span class="logo-text">IV ХАЛЫҚАРАЛЫҚ ФАРАБИ ФОРУМЫ<br>ӘЛ-ФАРАБИДІҢ 1155 ЖЫЛДЫҒЫ</span>
+            </div>
+            <a href="https://farabi.university/?lang=kz"><img src="../images/logonew1.png" alt="Университет" class="logo right-logo"></a>
+        </header>
+        
+        <main>
+            <section id="articles" class="tab-content">
+                <div class="articles-container">
+                    <h2>Мақалалар</h2>
+            
+                    <div class="articles-list">
+                        <div class="article-item" onclick="openArticle(1)">
+                            <h3>ИНВЕНТАРИЗАЦИЯ ГЕРБАРНЫХ ОБРАЗЦОВ РОДА ALLIUM L.
+                                АРАЛО-БАЛХАШСКОГО РЕГИОНА В ГЕРБАРНЫХ ФОНДАХ Г. АЛМАТЫ</h3>
+                            <p>Целью работы является скрининг гербарных материалов видов рода...</p>
+                            <span class="article-author">Автор: Абдилданов Д.Ш.</span>
+                        </div>
+                        <div class="article-item" onclick="openArticle(2)">
+                            <h3>СРАВНИТЕЛЬНЫЙ АНАЛИЗ ПОЧВ ПРОИЗРАСТАЮЩИХ
+                                FRAXINUS SOGDIANA BUNGE</h3>
+                            <p>Анализ морфогенетических свойств почв долин рек Шарын и Боролдай...</p>
+                            <span class="article-author">Автор: Алдибекова А.Р.</span>
+                        </div>
+                        <div class="article-item" onclick="openArticle(3)">
+                            <h3>РАЗРАБОТКА ТЕХНОЛОГИИ ВВЕДЕНИЯ В КУЛЬТУРУ IN VITRO ГИБРИДОВ
+                                ВИНОГРАДА КАЗАХСТАНСКОЙ СЕЛЕКЦИИ</h3>
+                            <p>Виноград занимает лидирующую позицию в ряду экономически значимых...</p>
+                            <span class="article-author">Авторы: Аралбаева М.М., Земцова А.С., Михайленко Н.В.</span>
+                        </div>
+                        <div class="article-item" onclick="openArticle(4)">
+                            <h3>ИВИДЫ ХОХЛАТОК ФЛОРЫ ЗАИЛИЙСКОГО АЛАТАУ, ХРАНЯЩИЕСЯ В
+                                ГЕРБАРИИ (АА)</h3>
+                            <p>Биоразнообразие Казахстана, как и большинства государств мира, находится под угрозой...</p>
+                            <span class="article-author">Автор: Ахметжанова Р.К.</span>
+                        </div>
+                        <div class="article-item" onclick="openArticle(5)">
+                            <h3>ОСОБЕННОСТИ ПИТАНИЯ САЗАНА (CYPRINUS CARPIO) В ОЗЕРЕ БАЛКАШ</h3>
+                            <p>Изучение питания рыб имеет важное значение в выяснении вопросов использования...</p>
+                            <span class="article-author">Авторы: Бараков Р.Т., Алтаева Ф.А.</span>
+                        </div>
+                        <div class="article-item" onclick="openArticle(6)">
+                            <h3>AКТУAЛЬНЫE ПPOБЛEМЫ БИOЛOГИИ И COХPAНEНИЯ БИOPAЗНOOБPAЗИЯ</h3>
+                            <p>Биoлoгичecкoe paзнooбpaзиe (БP)– этo coвoкупнocть вceх фopм жизни, нaceляющeй...</p>
+                            <span class="article-author">Автор: Валиева Г.М.</span>
+                        </div>
+                    </div>
+            
+                    <!-- Модальное окно для чтения статьи -->
+                    <div id="articleModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeArticle()">&times;</span>
+                            <h3 id="articleTitle"></h3>
+                            <p id="articleAuthor"></p>
+                            <p id="articleText"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <nav class="bottom-nav">
+            <a href="/kz_pages/farabi.html"><i class="fa-solid fa-landmark"></i> әл-Фараби</a>
+            <a href="/kz_pages/map.html"><i class="fa-solid fa-map"></i> Карта</a>
+            <a href="/"><i class="fa-solid fa-home"></i> Басты бет</a>
+            <a href="/kz_pages/contacts.html"><i class="fa-solid fa-address-book"></i> Байланыс</a>
+            <a href="#" class="menu-button" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i> Мәзір
+            </a>
+        </nav>
+        <div id="dropdown-menu" class="dropdown-menu">
+            <a href="/kz_pages/forum.html">Фараби форум</a>
+            <a href="/kz_pages/programme.html">Бағдарлама</a>
+            <a href="/kz_pages/sections.html">Секциялар</a>
+            <a href="/kz_pages/discussion.html">Пікірталас алаңдары</a>
+            <a href="/kz_pages/committee.html">Комитет</a>
+            <a href="/kz_pages/partners.html">Серіктестер</a>
+            <a href="/kz_pages/topics.html">Тақырыптар</a>
+            <a href="/kz_pages/speakers.html">Спикерлер</a>
+            <div class="language-menu">
+                <a href="/">Қаз</a>
+                <a href="/ru_index.html">Рус</a>
+                <a href="/en_index.html">Eng</a>
+            </div>
+        </div>
+        <script src="../src/index.js"></script>
+    </body>
+</html>
