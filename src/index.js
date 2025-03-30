@@ -7,18 +7,20 @@ if("serviceWorker" in navigator){
         console.log(error);
     })
 }
-document.querySelector(".menu-icon").addEventListener("click", function () {
-    document.querySelector(".navbar").classList.toggle("show");
-});
+function toggleMenu() {
+    var menu = document.getElementById("dropdown-menu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+// Закрытие меню при клике вне его области
 document.addEventListener("click", function (event) {
-    let navbar = document.querySelector(".navbar"); // Навбар
-    let menuIcon = document.querySelector(".menu-icon"); // Иконка меню
+    var menu = document.getElementById("dropdown-menu");
+    var menuButton = document.querySelector(".menu-button");
 
-    // Проверяем, был ли клик вне navbar и menu-icon
-    if (!navbar.contains(event.target) && !menuIcon.contains(event.target)) {
-        navbar.classList.remove("show"); // Скрываем меню
+    if (menu.style.display === "block" && !menu.contains(event.target) && !menuButton.contains(event.target)) {
+        menu.style.display = "none";
     }
 });
+
 document.addEventListener("DOMContentLoaded", function () {
     let days = document.querySelectorAll(".programme-day");
     let buttonsContainer = document.createElement("div");
@@ -27,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     days.forEach((day, index) => {
         let button = document.createElement("button");
-        button.innerText = `День ${index + 1}`;
+        button.innerText = `${index + 1}`;
         button.addEventListener("click", function () {
             days.forEach(d => d.style.display = "none");
             day.style.display = "block";
@@ -90,3 +92,19 @@ function openArticle(id) {
 function closeArticle() {
     document.getElementById("articleModal").style.display = "none";
 }
+
+function openModal(id) {
+    document.getElementById(id).style.display = "flex";
+}
+
+function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+}
+window.onclick = function(event) {
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach(modal => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+};
