@@ -47,7 +47,7 @@ body, html {
 .dropdown-menu {
     display: none;
     position: fixed;
-    bottom: 75px; /* Отступ от нижнего меню */
+    bottom: 70px; /* Отступ от нижнего меню */
     right: 0;
     background: #1a263c;
     padding: 10px;
@@ -191,6 +191,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.poster img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .programme-day {
